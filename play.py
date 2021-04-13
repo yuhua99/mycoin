@@ -42,8 +42,8 @@ if __name__ == '__main__':
         # result = client.get_public_order_book('maxtwd')
         # print(f"[I] Invoked get_public_order_book('maxtwd') API Result: \n    {result}\n")
 
-        result = client.get_public_order_book('maxtwd', 1, 2)
-        print(f"[I] Invoked get_public_order_book('maxtwd', 1, 2) API Result: \n    {result}\n")
+        # result = client.get_public_order_book('maxtwd', 1, 2)
+        # print(f"[I] Invoked get_public_order_book('maxtwd', 1, 2) API Result: \n    {result}\n")
 
         # result = client.get_public_pair_depth('maxtwd')
         # print(f"[I] Invoked get_public_pair_depth('maxtwd') API Result: \n    {result}\n")
