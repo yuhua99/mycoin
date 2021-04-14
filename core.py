@@ -8,10 +8,12 @@ from model import mail_bot
 # log = logging.getLogger()
 # log.setLevel(logging.info)
 
+
 def main():
     maxtool = client.Client(private.key, private.secret)
-    
-    models = [mail_bot.mail_bot('ethtwd', 56000), mail_bot.mail_bot('maxtwd', 18.1)]
+
+    models = [mail_bot.mail_bot('ethtwd', 56000),
+              mail_bot.mail_bot('maxtwd', 18.1)]
 
     while(True):
         for m in models:
