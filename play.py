@@ -9,7 +9,8 @@ if __name__ == '__main__':
         # result = client.get_public_all_currencies()
         # print(f"[I] Invoked get_public_all_currencies() API Result: \n    {result}\n")
 
-        result = client.get_public_k_line('ethtwd', 1, 60*24*7)
+        # result = client.get_public_k_line('ethtwd', 1, 60*24*7)
+        result = client.get_public_k_line('ethtwd', 4, 60*24*7)
         print(f"[I] Invoked get_public_k_line('ethtwd', 2, 60) API Result: \n    {result}\n")
 
         # result = client.get_public_pair_depth('maxtwd', 2)

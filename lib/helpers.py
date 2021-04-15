@@ -22,6 +22,9 @@ def get_truncated_value(value, decimal=8):
 
 
 def send_mail(recv, mail_info):
+    if not mail_info:
+        return
+    
     mail = MIMEMultipart()
     mail["subject"] = mail_info[0]
     mail["from"] = email_sender
@@ -37,3 +40,11 @@ def send_mail(recv, mail_info):
             # print("Email sended!")
         except Exception as e:
             print("Error message: ", e)
+
+    # for debug
+    
+    # print("___________email content____________")
+    # print(mail_info[0])
+    # print()
+    # print(mail_info[1])
+    # print("____________________________________")
